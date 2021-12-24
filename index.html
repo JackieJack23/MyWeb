@@ -1,0 +1,211 @@
+<!--
+    TIPS:
+
+    Treat <div> like frames in Roblox Studio
+    Classes are like variables CSS uses to access and edit the element
+    Organization is key
+    Instead of bunching things together in one div, use mutiple
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 Frontend Tuteriol</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+
+        <!--Creates a division in HTML doc-->
+        <div class="navbar">
+            <!--Container within division for buttons-->
+            <div class="container">
+                <!--Creates a hyperlink (link) and adds text: RememberThat-->
+                <!--Wraps with <span> to be edited later with css-->
+                <a class="logo" href="#"> Remember<span>That</span> </a>
+
+                <!--ID use for JavaScript to open and close navigation (mobile)-->
+                <!--Assign class to edit img with css-->
+                <!--Source: Location of img-->
+                <!--Alt: Name for img for people with screen reader, etc-->
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+                <!--Nav, element used for menu/nav section of site-->
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                    
+                    <!--Unumbered list for nav buttons-->
+                    <!--Class to edit with css-->
+                    <ul class="primary-nav">
+                        <!--Must use <li> when adding element to list-->
+
+                        <!--Hyperlinks Home, Features, Pricing-->
+                        <!--Class for home as current. Turns bold when on home page-->
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li><a href="#">Conatct</a></li>
+                        <!--Class, button requires css edit-->
+                        <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+
+        <!--Creates section of page-->
+        <!--Class, edit later with css-->
+        <section class="hero">
+            <!--Division for UI elements-->
+            <div class="container">
+                <!--Division for LEFT UI elements-->
+                <div class="left-col">
+                    <!--Paragraph of class subhead, edit later with css-->
+                    <!--Use &amp when attempting to write "&"-->
+
+                    <!--Heading for page-->
+                    <!--Lower number, larger font-->
+                    <p class="subhead"> It's Nitty &amp; Gritty </p>
+                    <h1> A Task App That Does It All! </h1>
+
+                    <!--Create division for buttons-->
+                    <!--Hyperlink with class to edit with css-->
+                    <!--Hyperlink with class to edit with css, img with the link-->
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try For Free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch A Video"> Watch A Video
+                        </a>
+                    </div>
+                </div>
+
+                <!--Add img-->
+                <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+            </div>
+        </section>
+
+        <!--Creates section of page-->
+        <!--Class, edit later with css-->
+        <section class="features-section">
+            <!--Division to put in list-->
+            <div class="container">
+                <!--Unumbered list for text-->
+                <ul class="features-list">
+                    <!--List of text (features)-->
+                    <li>Unlimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Confetti Explosions Upon Task Completions</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaborations</li>
+                    <li>Many More Awesome Features</li>
+                </ul>
+
+                <!--Image-->
+                <img src="images/holding-phone.jpg" alt="Man Holding Phone">
+            </div>
+        </section>
+
+        <!--Creates section of page-->
+        <!--Class, edit later with css-->
+        <section class="feedbacks-section">
+            <!--Division to put in feedbacks-->
+            <div class="container">
+                <!--Unumbered list for a list of feedbacks-->
+                <ul>
+                    <!--List of feedbacks-->
+                    <li>
+                        <!--Image of a person-->
+                        <!--<blackquote> quotes the text-->
+                        <!--<cite> titlts text to "cite" it-->
+
+                        <img src="images/person.jpg" alt="Person">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                        <cite>- John Doe</cite>
+                    </li>
+
+                    <li>
+                        <!--SAME AS ABOVE-->
+                        <img src="images/person.jpg" alt="Person">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                        <cite>- John Doe</cite>
+                    </li>
+
+                    <li>
+                        <!--SAME AS ABOVE-->
+                        <img src="images/person.jpg" alt="Person">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                        <cite>- John Doe</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Creates section of page-->
+        <!--Class, edit later with css-->
+        <section class="contact-section">
+            <!--Container for whole of section-->
+            <div class="container">
+                <!--Container for LEFT of section ONLY-->
+                <div class="contact-left">
+                    <!--Heading 2-->
+                    <h2>Contact</h2>
+
+                    <!--<form> creates input area / a form-->
+                    <!--Action is the URL that the form will be sent upon submission-->
+                    <form action="">
+                        <!--Creates text label-->
+                        <!--Bounds label to element "name"-->
+                        <!--Gives text as "Name"-->
+
+                        <!--Creates input box-->
+                        <!--Type to "text"/usage-->
+                        <!--Sets ID and bounds it to label, can be edited by JavaScript-->
+                        <!--Sets name of input to "name"-->
+
+                        <!--*BOUNDING NAME/ID OF LABEL AND INPUT MUST BE SAME*-->
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="e-mail">E-Mail</label>
+                        <input type="text" id="e-mail" name="e-mail">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        
+                        <!--Creates Input Box-->
+                        <!--Sets type/usage to submit. Creates a button-->
+                        <!--Sets class to customize button with CSS-->
+                        <!--Adds text to button-->
+                        <input type="submit" class="send-message" value="Send Message">
+                    </form>
+                </div>
+
+                <!--Container for RIGHT of section ONLY-->
+                <div class="contact-right">
+                    <!--COPY AND PASTE EMBEDDED GOOGLE MAPS URL-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110489.81095979668!2d-95.44316940609136!3d30.071077898252167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640ccc646dfdb4b%3A0x496129fbe4b11b29!2sSpring%2C%20TX%2077373!5e0!3m2!1sen!2sus!4v1640032124294!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--JAVA SCRIPT | MOBILE HANDLE-->
+        <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+        </script>
+
+    </body>
+</html>
